@@ -1,0 +1,43 @@
+body
+{
+	width:97%;
+}
+
+.icon {
+	font-size: 30px;
+	margin-right: 15px;
+}
+
+.input {
+	overflow: visible;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid steelblue;
+	width: 41%;
+}
+
+.editorBox {
+	width: 48% ;
+}
+
+.userform {
+	width: 50%;
+	left: 38%;
+	position: relative;
+	top: 109px;
+}
+
+.topBottom {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+input[type=file] {
+	width: 47%;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button
+	{
+	-webkit-appearance: none;
+	margin: 0;
+}

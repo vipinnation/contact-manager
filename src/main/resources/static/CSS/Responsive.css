@@ -1,0 +1,47 @@
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: #b9f6ca;
+	}
+	.logo {
+		margin-left: 0 !important;
+	}
+	.homeBox {
+		position: relative;
+		top: 155px;
+	}
+	.homeBox .detail {
+		margin-top: 47px;
+	}
+	.homeBox .btnResponse {
+		position: relative;
+		top: 39px;
+	}
+	.homeBox .btn {
+		width: 50%;
+	}
+	.homeBox .btn a {
+		margin: 0 auto;
+	}
+	.form {
+		width: 50%;
+		top: 35px;
+		position: relative;
+	}
+	.loginTop {
+		top: 58px;
+	}
+	.signUpForm {
+		width: 75%;
+		position: relative;
+		top: 25px;
+	}
+	.signUpLinkTop {
+		position: relative;
+		top: 75px;
+	}
+	.alert {
+		/* padding: 0.96rem 0.96rem !important; */
+		padding: 9px 12px;
+		max-width: 136%;
+	}
+}

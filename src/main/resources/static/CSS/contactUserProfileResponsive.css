@@ -1,0 +1,22 @@
+@media only screen and (max-width:600px) {
+	.imgContactBox img {
+		width: 119%;
+		position: relative;
+		left: 53px;
+		right: 91px;
+		top: 31px;
+		border-radius: 66%;
+	}
+	.contactTable {
+		width: 23%;
+		top: 130px;
+		position: relative;
+		left: -37px;
+	}
+	
+	.alertBox
+	{
+		width:100%;
+		top:89px;
+	}
+}

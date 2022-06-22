@@ -1,0 +1,77 @@
+body {
+	transition: 5s
+}
+
+.userDetail {
+	display: inline;
+	position: relative;
+	top: 139px;
+}
+
+.userDetail label {
+	margin-top: 15px;
+	right: 112px;
+	position: relative;
+	/* text-align: left !important; */
+	border: 1px solid aliceblue;
+	background: antiquewhite;
+	width: 33%;
+}
+
+.detail {
+	display: block;
+	width: 44%;
+	position: relative;
+	left: 45%;
+}
+
+.userInform {
+	position: relative;
+	top: -32px;
+	left: 26px;
+}
+
+.profileBox {
+	width: 50%;
+	position: relative;
+	border: 2px solid;
+	display: flex;
+	justify-content: center;
+	/* height: 102vh; */
+	left: 27%;
+	top: 127px;
+	box-shadow: 12px 11px #82b1ff;
+	background: #8c9eff;
+}
+
+.imgProfileBox img {
+	/* width: 19%; */
+	position: relative;
+	/* left: 74px; */
+	right: 91px;
+	top: 31px;
+	border-radius: 66%;
+}
+
+.profileTable {
+	width: 23%;
+	top: 13px;
+	position: relative;
+	left: 20px;
+}
+
+.profileTable tr th {
+	margin-bottom: 12px;
+	display: inline-block;
+	width: 160%;
+	background: #b39ddb;
+	border-radius: 12px;
+	padding: 0 29px;
+}
+
+.profileTable tr td {
+	margin-bottom: 12px;
+	display: inline-block;
+	left: 68px;
+	position: relative;
+}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	th:replace="Profile/userBase::layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>Dashboard - Smart Contact Manager</title>
+</head>
+<body>
+
+	<section>
+		<div class="headingBox">
+			<h2 class="text-center contactHeading">Contact Detail</h2>
+		</div>
+
+		<div class="contactBox">
+			<div class="imgContactBox">
+				<img alt="" th:src="@{/images/img.png}">
+			</div>
+			<div>
+				<table class="contactTable" th:each="contacts : ${contact}">
+					<tr>
+						<th>Name</th>
+						<td th:text="${contacts.name}"></td>
+					</tr>
+					<tr>
+						<th>Number</th>
+						<td th:text="${contacts.contactNumber}"></td>
+					</tr>
+					<tr>
+						<th>Email</th>
+						<td th:text="${contacts.email}"></td>
+					</tr>
+					<tr>
+						<th>Profession</th>
+						<td th:text="${contacts.work}"></td>
+					</tr>
+
+					<tr>
+						<th>Description</th>
+						<td th:text="${contacts.description}"></td>
+					</tr>
+
+				</table>
+			</div>
+
+			<div class="contactBtn">
+				<button type="button" class="btn btn-primary" data-toggle="modal"
+					data-target="#staticBackdrop">Update</button>
+				<button type="button" class="btn btn-outline-primary btn-danger">
+					<a th:href="@{'/user/deleteContact/'+${contact.contactId}}">Delete</a>
+				</button>
+			</div>
+		</div>
+
+
+
+
+		<!-- Button trigger modal -->
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="staticBackdrop" data-backdrop="static"
+			data-keyboard="false" tabindex="-1"
+			aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="staticBackdropLabel">Update
+							Contact</h5>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+
+						<form th:action="@{'/user/updateContact/' + ${contact.contactId}} "   method="POST">
+							<div class="form-group">
+								<label for="formGroupExampleInput">Name</label> <input
+									type="text" class="form-control" name="name" id="formGroupExampleInput"
+									th:value="${contact.name}">
+									<input type="number" th:value="${contact.contactId}" hidden name="contacId"/>
+									 
+							</div>
+							<div class="form-group">
+								<label for="formGroupExampleInput">Number</label> <input
+									type="text" class="form-control" id="formGroupExampleInput"
+									th:value="${contact.contactNumber}" name="contactNumber">
+							</div>
+							<div class="form-group">
+								<label for="formGroupExampleInput">Email</label> <input
+									type="text" class="form-control" id="formGroupExampleInput"
+									th:value="${contact.email}" name="email">
+
+							</div>
+							<div class="form-group">
+								<label for="formGroupExampleInput">Profession</label> <input
+									type="text" class="form-control" id="formGroupExampleInput"
+									th:value="${contact.work}" name="work">
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlTextarea1">Description</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1"
+									th:value="${contact.description}" rows="3" name="description"></textarea>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary"
+									data-dismiss="modal">Close</button>
+								<button type="submit" class="btn btn-primary">Update</button>
+							</div>
+				 
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</section>
+</body>
+</html>

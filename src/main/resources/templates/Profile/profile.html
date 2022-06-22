@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	th:replace="Profile/userBase::layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>Dashboard - Smart Contact Manager</title>
+</head>
+<body>
+
+	<section>
+		<div class="headingBox">
+			<h2 class="text-center contactHeading">User Detail</h2>
+
+
+		</div>
+
+		<div class="profileBox">
+			 
+			<div class="imgProfileBox">
+				<img alt="" th:src="@{/images/img.png}">
+			</div>
+			<div>
+				<table class="profileTable" th:object="${user}">
+					<tr>
+						<th>Name</th>
+						<td th:text="${fullName}"></td>
+					</tr>
+					<tr>
+						<th>Email</th>
+						<td th:text="${user.email}"></td>
+					</tr>
+					<tr>
+						<th>Account Status</th>
+						<td th:text="${user.status}"></td>
+					</tr>
+					<tr>
+						<th>Account Type</th>
+						<td th:text="${user.role}"></td>
+					</tr>
+
+					<tr>
+						<th>About</th>
+						<td th:text="${user.about}"></td>
+					</tr>
+
+				</table>
+			</div>
+
+		</div>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+.loginTop {
+	top: 20px;
+}
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap')
+	;
+
+.text-center {
+	font-family: 'Charm', cursive;
+}
+
+.alert {
+	
+	padding: 0.50rem 1.25rem !important;
+	 
+}
+
+.alert-dismissible .close {
+	padding: 0.50rem 1.25rem !important;
+}

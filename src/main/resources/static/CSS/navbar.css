@@ -1,0 +1,24 @@
+@charset "ISO-8859-1";
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lobster&family=Source+Code+Pro&display=swap')
+	;
+
+.navHover li a {
+	font-family: 'Libre Baskerville', serif;
+	font-family: 'Source Code Pro', monospace;
+	 color:#607d8b;
+}
+
+.logo {
+	font-family: 'Libre Baskerville', serif;
+	font-family: 'Lobster', cursive;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.navHover li a:hover {
+	background: #9fa8da;
+	color: #673ab7;
+	transition: 1.0s;
+	background-color:#00b0ff ;
+}

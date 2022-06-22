@@ -1,0 +1,116 @@
+@media only screen and (max-width:600px) {
+	.alertBox {
+		width: 71% !important;
+		left: 19% !important;
+		top: 103px !important;
+	}
+	.sidebar {
+		width: 50;
+		height: auto;
+		position: relative;
+	}
+	.userform {
+		width: 90%;
+	}
+	.headingBox {
+		top: 36px;
+	}
+	.headingBox .contactHeading {
+		left: 85px;
+		top: 22px;
+	}
+	.userform {
+		left: 15% !important;
+		width: 80% !important;
+	}
+	.editorBox {
+		width: 92% !important;
+	}
+	.input {
+		width: 77% !important;
+	}
+	input[type=file] {
+		width: 91% !important;
+	}
+	input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button
+		{
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	.alert {
+		width: 90% !important;
+	}
+	.list-group-item-action {
+		width: 164%;
+		color: #495057;
+		text-align: inherit;
+		right: 81px;
+	}
+	.card-group {
+		width: 96% !important;
+		left: 12px !important;
+		position: relative !important;
+		top: 12px;
+	}
+	.card-body {
+		left: 60px !important;
+	}
+	.card-body p {
+		width: 36% !important;
+		display: inline-block;
+		top: 35px;
+		position: relative;
+	}
+	.card-body a {
+		left: 235px !important;
+		padding: 0 0 !important;
+	}
+	.card-title {
+		width: 62%;
+		top: 36px;
+		display: inline-block;
+		position: relative;
+	}
+	.card img {
+		width: 11%;
+		top: 17px;
+		position: relative;
+	}
+	.linkBox {
+		width: 12px;
+		position: relative;
+		left: 12px;
+	}
+	.linkBox .deleteContact {
+		position: relative;
+		top: 2px !important;
+	}
+	.userAlert {
+		width: 100% !important;
+		padding: 0.50rem 1.25rem !important;
+	}
+	.userAlert .close {
+		right: 0 !important;
+	}
+	.contactBox {
+		width: 84% !important;
+		left: 11% !important;
+		height: 71vh;
+		top: 73px !important;
+	}
+	.contactList {
+		top: 90px !important;
+	}
+	.imgContactBox img {
+		width: 66%;
+		left: 77px;
+		top: 7px !important;
+	}
+	.contactTable {
+		top: 184px !important;
+		left: -156px !important;
+	}
+	.contactBtn {
+		top: 101% !important;
+	}
+}

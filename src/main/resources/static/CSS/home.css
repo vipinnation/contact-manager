@@ -1,0 +1,31 @@
+@charset "ISO-8859-1";
+
+body{
+	width:100%;
+	height:100% 
+}
+.homeBox{
+	font-family: 'Libre Baskerville', serif;
+	position:relative;
+	top:150px; 
+	 
+}
+
+.btn
+{
+	transition:1.0s
+}
+
+
+.position-relative-login {
+	top: 60px;
+}
+
+.form {
+	width: 24%;
+}
+
+.loginTop {
+	top: 20px;
+}
+

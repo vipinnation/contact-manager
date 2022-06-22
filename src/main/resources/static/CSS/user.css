@@ -1,0 +1,21 @@
+.headingBox {
+	font-family: 'Libre Baskerville', serif;
+	position: relative;
+	top: 75px;
+	display: inline;
+}
+
+.headingBox .contactHeading {
+	display: inline-block;
+	margin: 0 3px;
+	left: 608px;
+	position: relative;
+}
+
+.userForm {
+	width: 50%;
+	top: 104px;
+	position: relative;
+	left: 38%;
+}
+

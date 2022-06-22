@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+<meta charset=" UTF-8" />
+<title th:text="${title}"> </title>
+ 
+</head>
+<body>
+
+
+	<section>
+
+
+		<div class="position-relative-login position-relative ">
+			<div>
+				<h1 class="text-center">Login</h1>
+			</div>
+
+			<div class="  ">
+				<div class="d-flex  justify-content-center">
+					<form th:action="@{/login}" class="form" method="post">
+
+						<div th:if="${param.error}"
+							class="alert  alert-danger alert-dismissible fade show"
+							role="alert">
+							<strong>Invalid Username and Password </strong>
+							<button type="button" class="close" data-dismiss="alert"
+								aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+
+						</div>
+
+						<div th:if="${param.logout}"
+							class="alert  alert-success alert-dismissible fade show"
+							role="alert">
+							<strong>Logged Out Successfully !! </strong>
+							<button type="button" class="close" data-dismiss="alert"
+								aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+
+						</div>
+
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label> <input
+								name="username" type="email" class="form-control"
+								id="exampleInputEmail1" aria-describedby="emailHelp">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Password</label> <input
+								name="password" type="password" class="form-control"
+								id="exampleInputPassword1">
+						</div>
+
+						<div class="d-flex  justify-content-center">
+							<button type="submit" class="btn btn-primary mx-md-n5">Login</button>
+						</div>
+
+					</form>
+				</div>
+
+				<div class="text-center position-relative loginTop">
+					<h5>
+						Create a Account <a th:href="@{/signup}">Click Here</a>
+					</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
